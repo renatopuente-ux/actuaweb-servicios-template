@@ -149,6 +149,20 @@ footer{background:#E2E6F0;padding:48px 0 32px;font-size:13.5px;color:var(--muted
   background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.25);text-decoration:none}
 .wa-fab svg{width:30px;height:30px;fill:#fff}
 
+/* ---- Formularios (wireframe) ---- */
+.form-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px;text-align:left}
+.form-card h3{font-size:19px;font-weight:800;color:var(--navy);margin:8px 0 16px}
+.f-field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.f-field label{font-size:12px;font-weight:800;color:var(--muted);letter-spacing:.3px}
+.f-field input,.f-field select,.f-field textarea{font-family:'Nunito',sans-serif;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:#F7F8FC;font-size:14px;color:var(--text);width:100%}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{outline:2px solid rgba(21,31,71,.25)}
+.f-grid2{display:grid;grid-template-columns:1fr 1fr;grid-column-gap:12px}
+.f-submit{width:100%;justify-content:center}
+.f-micro{font-size:11.5px;color:var(--weak);margin-top:12px;text-align:center}
+.consent{display:flex;gap:9px;align-items:flex-start;font-size:11.5px;color:var(--muted);margin:6px 0 14px;font-weight:600;line-height:1.5}
+.consent input{margin-top:2px;flex-shrink:0}
+.cta-final .form-card{max-width:560px;margin:0 auto}
+
 /* ---- Responsive ---- */
 @media (max-width:991px){
   .hero-grid{grid-template-columns:1fr}
@@ -158,6 +172,7 @@ footer{background:#E2E6F0;padding:48px 0 32px;font-size:13.5px;color:var(--muted
 }
 @media (max-width:600px){
   section{padding:44px 0}
+  .f-grid2{grid-template-columns:1fr}
   .g2,.g3,.g4,.steps,.stats,.team,.bridge{grid-template-columns:1fr}
   .nav-links{display:none}
   .cta-final{padding:40px 24px;border-radius:20px}
