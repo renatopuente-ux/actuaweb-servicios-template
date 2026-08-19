@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template integral de servicios · Actuaweb (wireframe)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .anatomy{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+  .a-block{background:var(--card);border-radius:16px;box-shadow:var(--shadow-sm);padding:16px 18px}
+  .a-block b{display:block;font-size:13.5px;color:var(--navy)}
+  .a-block span{font-size:12px;color:var(--muted)}
+  .a-num{color:var(--orange);font-weight:900;font-size:13px;margin-right:6px}
+  .pages{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:26px}
+  .page-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;text-decoration:none;transition:all .18s ease;display:block}
+  .page-card:hover{transform:translateY(-3px)}
+  .page-card h3{font-size:20px;font-weight:800;color:var(--navy);margin:10px 0 6px}
+  .page-card p{font-size:14px;color:var(--muted)}
+  .page-card .arrow{color:var(--orange);font-weight:800;font-size:14px;display:inline-block;margin-top:14px}
+  @media(max-width:900px){.anatomy{grid-template-columns:1fr 1fr}.pages{grid-template-columns:1fr}}
+  @media(max-width:600px){.anatomy{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">ACTUARIA<span>◆</span></a>
+    <ul class="nav-links"><li><a class="active" href="#">Wireframe · Template de servicios</a></li></ul>
+    <a class="nav-cta" href="#paginas">Ver las 4 páginas</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Actuaweb · Proyecto Web 2.0 · Wireframe de media fidelidad</span>
+    <h1>Un solo template integral para las 4 líneas de negocio</h1>
+    <p class="sub">Hoy cada página de servicio tiene su propia estructura. Esta propuesta las unifica con la anatomía recomendada por la auditoría Web &amp; AEO (PMV Agency): el usuario ve la misma experiencia en cualquier vertical, y cada bloque cumple una función de conversión o de posicionamiento en IAs.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>La anatomía del template</h2>
+    <p>9 bloques en orden fijo. Los 8 de la guía PMV + un bloque de Soluciones (02) que agregamos porque el catálogo de servicios de cada vertical es contenido esencial que la anatomía original no contempla.</p></div>
+    <div class="anatomy">
+      <div class="a-block"><b><span class="a-num">01</span>Hero + propuesta</b><span>Pregunta detonante del cliente + promesa + CTA a cotización + cifras de confianza</span></div>
+      <div class="a-block"><b><span class="a-num">02</span>Soluciones de la vertical</b><span>El catálogo real de servicios, en cards uniformes con chips</span></div>
+      <div class="a-block"><b><span class="a-num">03</span>Cómo lo hacemos</b><span>Proceso en 4 pasos — reduce la incertidumbre del comprador B2B</span></div>
+      <div class="a-block"><b><span class="a-num">04</span>Testimonios por vertical</b><span>Prueba social específica: nombre real, cargo, empresa, resultado</span></div>
+      <div class="a-block"><b><span class="a-num">05</span>Casos y cifras</b><span>Números puntuales, no "líderes en…"</span></div>
+      <div class="a-block"><b><span class="a-num">06</span>Equipo / autoridad técnica</b><span>Voceros de la vertical con LinkedIn</span></div>
+      <div class="a-block"><b><span class="a-num">07</span>Puente a otra vertical</b><span>Cross-sell orgánico, 2 puentes por página</span></div>
+      <div class="a-block"><b><span class="a-num">08</span>FAQ</b><span>6 preguntas con respuestas de 50-80 palabras — schema FAQPage, la capa clave de AEO</span></div>
+      <div class="a-block"><b><span class="a-num">09</span>CTA específico</b><span>"Cotiza tu…" — el verbo exacto de la acción, nunca "más información"</span></div>
+    </div>
+    <p class="wf-note">Transversales en todas las páginas: WhatsApp flotante · header limpio con "Nosotros" secundario · footer con certificaciones ISO. Las etiquetas punteadas <span class="wf-tag" style="margin:0">Bloque XX</span> son anotaciones del wireframe — no van en producción.</p>
+  </div>
+</section>
+
+<section id="paginas">
+  <div class="wrap">
+    <div class="sec-head"><h2>Las 4 líneas de negocio con el template aplicado</h2>
+    <p>El contenido proviene de las páginas actuales de actuaria.com, reescrito con UX writing (pregunta detonante, beneficio antes que característica, verbos de acción) y storytelling B2B.</p></div>
+    <div class="pages">
+      <a class="page-card" href="employment-benefits.html"><span class="chip">Vertical ancla</span><h3>Beneficios Laborales</h3><p>Jubilación patronal y desahucio · NIC 19 · 6 soluciones incl. Navia (IA actuarial)</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="insurance-health.html"><span class="chip">Sector asegurador</span><h3>Seguros y Medicina Prepagada</h3><p>Reservas técnicas · Tarificación · IFRS 17 y Solvencia II · 7 soluciones · testimonio real BMI</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="data-wave.html"><span class="chip">Vertical de futuro</span><h3>Data Wave</h3><p>Automatización · BI · Machine Learning · 3 testimonios reales (GPF 98%, IMFRISA, Seguros del Pichincha)</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="risk-finance.html"><span class="chip">Autoridad técnica</span><h3>Riesgos y Finanzas</h3><p>Factibilidad · Valoración de empresas · Gestión de riesgos · DLV y PAR · 7 consultorías</p><span class="arrow">Ver página →</span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Pendientes marcados en el wireframe</h2></div>
+    <div class="grid g3">
+      <div class="card"><span class="chip orange">Contenido</span><h3>Testimonios por vertical</h3><p>EB y Riesgos tienen placeholders — recopilar citas reales con nombre, cargo y empresa (la guía lo exige). Salud y Data ya tienen testimonios reales.</p></div>
+      <div class="card"><span class="chip orange">Contenido</span><h3>Equipo por vertical</h3><p>Definir 2-3 voceros técnicos por línea de negocio con foto, cargo y LinkedIn.</p></div>
+      <div class="card"><span class="chip orange">Técnico</span><h3>Schema.org al implementar</h3><p>En Webflow: Organization (global), Service por vertical, FAQPage con las 6 preguntas de cada página, según apéndice A2 de la guía.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="copy"><span>© 2026 Actuaria Consultores · Wireframe interno de trabajo</span><span>Base: Guía Web &amp; AEO (PMV Agency) + contenido de actuaria.com</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
