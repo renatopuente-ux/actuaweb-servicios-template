@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto · Template Actuaweb (wireframe)</title>
+<title>Contacto · Template servicios Actuaria (wireframe)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -15,8 +15,7 @@
     <a class="logo" href="index.html"><img class="logo-img" src="logo-actuaria.svg" alt="Actuaria"></a>
     <ul class="nav-links">
       <li><a href="index.html">Servicios ▾</a></li>
-      <li><a href="#">Cómo trabajamos</a></li>
-      <li><a href="#">Casos</a></li>
+      <li><a href="employment-benefits.html#proceso">Cómo trabajamos</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a class="nav-sec" href="#">Nosotros</a></li>
     </ul>
@@ -24,32 +23,34 @@
   </div>
 </header>
 
-<!-- CONTACTO 01 · HERO + CANALES -->
+<!-- CONTACTO 01 · HERO -->
 <section class="hero" style="padding-bottom:44px">
   <div class="wrap">
-    <span class="wf-tag">Contacto 01 · Hero + canales directos</span>
-    <span class="kicker">Contacto · /contacto/ = página de cotización</span>
-    <h1>Hablemos de la decisión que tienes por delante</h1>
-    <p class="sub">Elige el canal que prefieras — respondemos en horario laboral y tu información está protegida bajo ISO/IEC 27001.</p>
+    <span class="wf-tag">Contacto 01 · Hero</span>
+    <span class="kicker">Contacto</span>
+    <h1>Cuéntanos tu desafío corporativo</h1>
+    <p class="sub">Convierte la incertidumbre financiera y laboral en una ventaja clara. Diseñemos juntos la estrategia que protege a tu empresa.</p>
+    <p class="wf-note"><b>Limpieza de redundancia (deck: «ELIMINAR, YA LO DECIMOS ANTES»).</b> Se quitó el H1 anterior «Hablemos de la decisión que tienes por delante» y su bajada «Elige el canal que prefieras — respondemos en horario laboral y tu información está protegida bajo ISO/IEC 27001»: el horario ya vive en el canal «Horario de atención» y en el footer, y las ISO ya están en el footer. También se retiró el kicker técnico «/contacto/ = página de cotización» (nota interna, no copy) y no se puso CTA en el hero porque el formulario está inmediatamente debajo.</p>
+    <p class="wf-note">Header y footer heredados de <code>employment-benefits.html</code>, con dos ajustes propios de las páginas que no son de servicio: <code>Servicios ▾</code> pierde el estado <code>active</code> y apunta al hub, y <code>Cómo trabajamos</code> apunta a <code>employment-benefits.html#proceso</code>, porque el ancla <code>#proceso</code> solo existe en las 4 verticales.</p>
   </div>
 </section>
 
 <!-- CONTACTO 02 · CANALES + FORMULARIO -->
 <section>
   <div class="wrap">
-    <span class="wf-tag">Contacto 02 · Canales (WhatsApp primero) + formulario completo</span>
+    <span class="wf-tag">Contacto 02 · Canales (WhatsApp primero) + formulario</span>
     <div class="contact-grid">
       <div>
-        <a class="channel wa" href="#"><div class="ico">💬</div><div><b>WhatsApp — el canal más rápido</b><span>(+593-9) 7913-3351 · chatea con un asesor</span></div></a>
-        <a class="channel" href="#"><div class="ico">📞</div><div><b>Llámanos</b><span>(+593-2) 392-3400 · Quito y Guayaquil</span></div></a>
+        <a class="channel wa" href="#"><div class="ico">💬</div><div><b>WhatsApp, el canal más rápido</b><span>(+593-9) 7913-3351 · chatea con un asesor</span></div></a>
+        <a class="channel" href="#"><div class="ico">📞</div><div><b>Llámanos</b><span>(+593-2) 392-3400</span></div></a>
         <a class="channel" href="#"><div class="ico">✉️</div><div><b>Escríbenos</b><span>info@actuaria.com</span></div></a>
-        <a class="channel" href="#"><div class="ico">🕘</div><div><b>Horario de atención</b><span>Lunes a viernes · 8h30 – 17h30</span></div></a>
-        <a class="channel" href="#"><div class="ico">🔗</div><div><b>Portal de clientes / Actuaria Plus</b><span>Acceso directo para clientes actuales ↗</span></div></a>
-        <p class="wf-note">WhatsApp va primero: es el canal de conversión preferido del cliente (guía PMV). Evento GA4: whatsapp_click · link_location=contact_page.</p>
+        <a class="channel" href="#"><div class="ico">🕘</div><div><b>Horario de atención</b><span>Lunes a viernes · 8h30 a 17h30</span></div></a>
+        <a class="channel" href="#"><div class="ico">🔗</div><div><b>Portal de clientes · Actuaria+</b><span>Acceso directo para clientes actuales ↗</span></div></a>
+        <p class="wf-note">WhatsApp va primero: es el canal de conversión preferido del cliente (guía PMV). Evento GA4: <code>whatsapp_click · link_location=contact_page</code>. Se recortó «Quito y Guayaquil» del canal telefónico porque las dos ciudades se detallan completas en el bloque de oficinas.</p>
       </div>
       <div class="form-card" id="form">
         <span class="chip orange">Respuesta sin compromiso</span>
-        <h3>Cuéntanos qué necesitas cotizar</h3>
+        <p style="font-size:14.5px;color:var(--muted);margin:10px 0 18px">Cuéntanos tu necesidad y nuestro equipo experto se contactará contigo.</p>
         <form action="#">
           <div class="f-grid2">
             <div class="f-field"><label>*RUC</label><input type="text" placeholder="17XXXXXXXXX001"></div>
@@ -60,42 +61,50 @@
             <div class="f-field"><label>*Apellido</label><input type="text"></div>
           </div>
           <div class="f-field"><label>*Correo corporativo</label><input type="email" placeholder="nombre@empresa.com"></div>
-          <div class="f-field"><label>Servicio de interés</label><select><option>Estudio Actuarial — Beneficios Laborales</option><option>Seguros y Medicina Prepagada</option><option>Data Wave</option><option>Riesgos y Finanzas</option><option>Aún no lo sé — necesito orientación</option></select></div>
-          <div class="f-field"><label>Tu mensaje (opcional)</label><textarea rows="3" placeholder="Cuéntanos brevemente tu caso"></textarea></div>
+          <div class="f-field"><label>Servicio de interés</label><select>
+            <option selected>Beneficios Laborales y Actuariales</option>
+            <option>Seguros y Medicina Prepagada</option>
+            <option>Análisis de Datos para Negocios</option>
+            <option>Riesgos y Finanzas Corporativas</option>
+            <option>Aún no lo sé, necesito orientación</option>
+          </select></div>
+          <div class="f-field"><label>Tu mensaje (opcional)</label><textarea rows="3" placeholder="Detalles, plazos o normativa aplicable"></textarea></div>
           <label class="consent"><input type="checkbox"> Declaro haber leído y entendido la Política de Protección de Datos Personales de Actuaria Consultores S.A. y autorizo el tratamiento de mis datos.</label>
-          <button class="btn btn-primary f-submit" type="button">Enviar y recibir mi propuesta</button>
+          <button class="btn btn-primary f-submit" type="button">Solicitar asesoría especializada</button>
         </form>
         <p class="f-micro">Evento GA4: form_submit · form_origin=contact_page (thank-you page /gracias/)</p>
       </div>
     </div>
+    <p class="wf-note">Se eliminó el título del formulario «Cuéntanos qué necesitas cotizar»: repetía el verbo y la idea del H1. El copy del deck queda como única entrada al formulario. Los 4 nombres de servicio están homologados en español; pendiente confirmar si la opción «Aún no lo sé» se mantiene en producción.</p>
   </div>
 </section>
 
 <!-- CONTACTO 03 · QUÉ PASA DESPUÉS -->
 <section>
   <div class="wrap">
-    <span class="wf-tag">Contacto 03 · Qué pasa después (reduce incertidumbre B2B)</span>
+    <span class="wf-tag">Contacto 03 · Qué pasa después</span>
     <div class="sec-head"><h2>Qué pasa después de escribirnos</h2></div>
     <div class="steps" style="grid-template-columns:repeat(3,1fr)">
-      <div class="step"><h3>Te contactamos</h3><p>Un asesor revisa tu caso y te escribe para entender el alcance — sin scripts, sin presión.</p></div>
-      <div class="step"><h3>Recibes tu propuesta</h3><p>Cotización clara con alcance, cronograma y entregables — sabes exactamente qué recibirás.</p></div>
+      <div class="step"><h3>Revisamos tu caso</h3><p>Un asesor especializado en tu vertical analiza el alcance antes de llamarte.</p></div>
+      <div class="step"><h3>Recibes tu propuesta</h3><p>Un documento claro con alcance, cronograma y entregables: sabes exactamente qué recibirás.</p></div>
       <div class="step"><h3>Empezamos</h3><p>Te asignamos el equipo técnico de tu vertical y arrancamos con la recopilación de información.</p></div>
     </div>
+    <p class="wf-note">Ajustes de redundancia: el paso 1 se llamaba «Te contactamos», lo mismo que ya promete el copy del formulario; se reformuló a «Revisamos tu caso». También se quitó «— sin scripts, sin presión» porque el chip «Respuesta sin compromiso» ya lo dice arriba.</p>
   </div>
 </section>
 
-<!-- CONTACTO 04 · OFICINAS + MAPAS -->
+<!-- CONTACTO 04 · OFICINAS -->
 <section>
   <div class="wrap">
     <span class="wf-tag">Contacto 04 · Oficinas con Google Maps embebido</span>
-    <div class="sec-head"><h2>Visítanos en Quito o Guayaquil</h2><p>Schema LocalBusiness por oficina, vinculado a Google Business Profile (guía PMV, prioridad URGENTE).</p></div>
+    <div class="sec-head"><h2>Visítanos en Quito o Guayaquil</h2></div>
     <div class="grid g2">
       <div class="office">
         <div class="ph">Google Maps · Oficina Quito (embed)</div>
         <div class="office-body">
-          <h3>Quito — Matriz</h3>
+          <h3>Quito, Matriz</h3>
           <p>Av. Orellana E9-195 y Av. 6 de Diciembre, Edif. Alisal de Orellana, Of. 804</p>
-          <p>(+593-2) 392-3400 · Lunes a viernes 8h30–17h30</p>
+          <p>(+593-2) 392-3400</p>
           <a class="btn btn-ghost" style="margin-top:10px;font-size:13.5px;padding:10px 20px" href="#">Cómo llegar →</a>
         </div>
       </div>
@@ -104,28 +113,27 @@
         <div class="office-body">
           <h3>Guayaquil</h3>
           <p>Av. José Santiago Castillo y Av. Francisco de Orellana, Edif. Millenium, Of. 1107</p>
-          <p>(+593-9) 7913-3351 · Lunes a viernes 8h30–17h30</p>
+          <p>(+593-9) 7913-3351</p>
           <a class="btn btn-ghost" style="margin-top:10px;font-size:13.5px;padding:10px 20px" href="#">Cómo llegar →</a>
         </div>
       </div>
     </div>
+    <p class="wf-note">Se quitó «Lunes a viernes 8h30–17h30» de las dos fichas: el horario ya aparece en el canal «Horario de atención» y en el footer (estaba 4 veces en la página). La bajada técnica «Schema LocalBusiness por oficina, vinculado a Google Business Profile» dejó de ser copy visible y se anota aquí: al implementar en Webflow, schema LocalBusiness por oficina + vínculo a Google Business Profile (guía PMV, prioridad URGENTE). Pendiente: embeds reales de Google Maps.</p>
   </div>
 </section>
 
 <!-- CONTACTO 05 · CONFIANZA + REDES -->
 <section>
   <div class="wrap">
-    <span class="wf-tag">Contacto 05 · Confianza + redes oficiales (consistencia de entidad para AEO)</span>
-    <div class="stats">
+    <span class="wf-tag">Contacto 05 · Confianza + redes oficiales</span>
+    <div class="stats" style="grid-template-columns:repeat(2,1fr)">
       <div class="stat"><b>+40</b><span>Años de trayectoria</span></div>
-      <div class="stat"><b>+6.500</b><span>Clientes en la región</span></div>
-      <div class="stat"><b>ISO ×2</b><span>Calidad 9001 · Seguridad 27001</span></div>
-      <div class="stat"><b>2</b><span>Oficinas: Quito y Guayaquil</span></div>
+      <div class="stat"><b>+6.500</b><span>Clientes anuales en la región</span></div>
     </div>
     <div class="cat-row" style="margin-top:26px">
       <a class="cat" href="#">LinkedIn</a><a class="cat" href="#">Instagram</a><a class="cat" href="#">Facebook</a><a class="cat" href="#">X</a>
     </div>
-    <p class="wf-note">Las redes enlazadas aquí deben coincidir con el sameAs del schema Organization — consistencia de entidad (palanca 4 de AEO).</p>
+    <p class="wf-note">De 4 cifras quedaron 2. Se eliminaron «ISO ×2 · Calidad 9001 · Seguridad 27001» (ya está en el footer) y «2 · Oficinas: Quito y Guayaquil» (el bloque anterior muestra las dos oficinas con dirección y mapa). Las redes enlazadas aquí deben coincidir con el <code>sameAs</code> del schema Organization — consistencia de entidad (palanca 4 de AEO). Pendiente: URLs reales de los perfiles.</p>
   </div>
 </section>
 
@@ -138,20 +146,21 @@
         <div class="iso"><span>ISO 9001:2015</span><span>ISO/IEC 27001:2022</span></div>
       </div>
       <div><h4>Servicios</h4><ul>
-        <li><a href="employment-benefits.html">Beneficios Laborales</a></li>
+        <li><a href="employment-benefits.html">Beneficios Laborales y Actuariales</a></li>
         <li><a href="insurance-health.html">Seguros y Medicina Prepagada</a></li>
-        <li><a href="data-wave.html">Data Wave</a></li>
-        <li><a href="risk-finance.html">Riesgos y Finanzas</a></li></ul>
+        <li><a href="data-wave.html">Análisis de Datos para Negocios</a></li>
+        <li><a href="risk-finance.html">Riesgos y Finanzas Corporativas</a></li></ul>
       </div>
       <div><h4>Empresa</h4><ul>
-        <li><a href="#">Cómo trabajamos</a></li><li><a href="#">Casos</a></li>
-        <li><a href="blog.html">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li></ul>
+        <li><a href="employment-benefits.html#proceso">Cómo trabajamos</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li>
+        <li><a href="contacto.html">Contacto</a></li></ul>
       </div>
       <div><h4>Contacto</h4><ul>
         <li>Quito: Av. Orellana E9-195 y Av. 6 de Diciembre, Edif. Alisal de Orellana, Of. 804</li>
         <li>Guayaquil: Av. José Santiago Castillo y Av. Francisco de Orellana, Edif. Millenium, Of. 1107</li>
         <li>(+593-2) 392-3400 · info@actuaria.com</li>
-        <li>Lunes a viernes · 8h30–17h30</li></ul>
+        <li>Lunes a viernes · 8h30 a 17h30</li></ul>
       </div>
     </div>
     <div class="copy"><span>© 2026 Actuaria Consultores</span><span>Wireframe media fidelidad · Template de contacto</span></div>
