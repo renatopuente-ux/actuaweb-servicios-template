@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog · Template Actuaweb (wireframe)</title>
+<title>Radar Actuarial · Blog Actuaweb (wireframe)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -15,8 +15,7 @@
     <a class="logo" href="index.html"><img class="logo-img" src="logo-actuaria.svg" alt="Actuaria"></a>
     <ul class="nav-links">
       <li><a href="index.html">Servicios ▾</a></li>
-      <li><a href="#">Cómo trabajamos</a></li>
-      <li><a href="#">Casos</a></li>
+      <li><a href="employment-benefits.html#proceso">Cómo trabajamos</a></li>
       <li><a class="active" href="blog.html">Blog</a></li>
       <li><a class="nav-sec" href="#">Nosotros</a></li>
     </ul>
@@ -29,32 +28,43 @@
   <div class="wrap">
     <span class="wf-tag">Blog 01 · Hero + filtros por vertical</span>
     <span class="kicker">Blog Actuaria</span>
-    <h1>Respuestas claras a las preguntas que definen tu negocio</h1>
-    <p class="sub">NIC 19, IESS, reservas técnicas, datos y riesgo — escritas por actuarios, en formato pregunta-respuesta. El mismo contenido que citan las IAs.</p>
+    <h1>Radar Actuarial</h1>
+    <p class="sub">Explora análisis estratégicos, tendencias financieras y guías prácticas sobre pasivos laborales y gestión de riesgos.</p>
+    <p class="sub" style="margin-top:10px">Detecta en nuestro radar los temas clave para mantener a tu empresa al día y anticiparte a los movimientos del mercado.</p>
     <div class="cat-row">
       <a class="cat active" href="#">Todos</a>
-      <a class="cat" href="#">Beneficios Laborales</a>
-      <a class="cat" href="#">Seguros y Salud</a>
-      <a class="cat" href="#">Data Wave</a>
-      <a class="cat" href="#">Riesgos y Finanzas</a>
+      <a class="cat" href="#">Beneficios Laborales y Actuariales</a>
+      <a class="cat" href="#">Seguros y Medicina Prepagada</a>
+      <a class="cat" href="#">Análisis de Datos para Negocios</a>
+      <a class="cat" href="#">Riesgos y Finanzas Corporativas</a>
     </div>
-    <p class="wf-note">Filtros = /blog/categoria/[vertical]/ según el mapa de URLs de la guía. Los títulos son preguntas (formato Q&amp;A para AEO).</p>
+    <p class="wf-note">Naming de la sección editorial · DECISIÓN PENDIENTE: se implementó la Opción 2 «Radar Actuarial» porque conversa con el copy «Detecta en nuestro radar…». La Opción 1 del deck es «Noticias, Tendencias, Ciencia Actuarial y Entorno Empresarial». Falta la decisión final del equipo.</p>
+    <p class="wf-note">Etiquetas de categoría homologadas con los nombres en español del home (se reemplazaron «Beneficios Laborales», «Seguros y Salud», «Data Wave» y «Riesgos y Finanzas»). Filtros = /blog/categoria/[vertical]/ según el mapa de URLs de la guía. Los títulos siguen en formato pregunta-respuesta para AEO.</p>
+    <p class="wf-note">El bloque de «Artículo destacado» que iba aquí debajo se eliminó por pedido del deck. Puede volver: el estilo <code>.featured</code> sigue disponible en styles.css.</p>
   </div>
 </section>
 
-<!-- BLOQUE 02 · DESTACADO -->
-<section style="padding-top:44px">
+<!-- BLOQUE 02 · BUSCADOR -->
+<section style="padding-top:44px;padding-bottom:44px">
   <div class="wrap">
-    <span class="wf-tag">Blog 02 · Artículo destacado</span>
-    <a class="featured" href="blog-articulo.html">
-      <div class="ph">Imagen destacada</div>
-      <div class="a-body">
-        <span class="chip">Beneficios Laborales</span>
-        <h3>¿Cómo se calcula la jubilación patronal según la NIC 19?</h3>
-        <p>La respuesta directa en 60 palabras y el paso a paso completo: insumos, método actuarial y los errores que más se repiten antes de una auditoría.</p>
-        <div class="meta"><span>[Autor · cargo]</span><span>14 ago 2026</span><span>6 min de lectura</span></div>
-      </div>
-    </a>
+    <span class="wf-tag">Blog 02 · Buscador del blog</span>
+    <div class="sec-head">
+      <h2>¿Buscas un tema puntual?</h2>
+      <p>Encuentra artículos por palabra clave o por temática: normativa, reservas, datos, riesgo o valoración.</p>
+    </div>
+    <div class="form-card" style="max-width:720px">
+      <form action="#" onsubmit="return false">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end">
+          <div class="f-field" style="margin-bottom:0">
+            <label>Palabra clave o temática</label>
+            <input type="search" placeholder="Ej.: NIC 19, jubilación patronal, IFRS 17, deserción de clientes, valoración de empresas">
+          </div>
+          <button class="btn btn-primary" type="button">Buscar</button>
+        </div>
+      </form>
+      <p class="f-micro">Sugerencias del deck: búsqueda por palabra clave o por temática, ubicada arriba de la grilla de artículos.</p>
+    </div>
+    <p class="wf-note">Buscador agregado por sugerencia explícita del deck. Es un wireframe: el input NO funciona. Pendiente al implementar en Webflow: definir si se usa la búsqueda nativa del sitio (filtrada a la colección del blog) o un filtro CMS tipo Finsweet, y si busca también dentro del cuerpo del artículo o solo en título y categoría.</p>
   </div>
 </section>
 
@@ -62,33 +72,34 @@
 <section>
   <div class="wrap">
     <span class="wf-tag">Blog 03 · Grid de artículos (cards uniformes)</span>
+    <div class="sec-head">
+      <h2>Últimos artículos del Radar Actuarial</h2>
+      <p>Análisis, tendencias y guías prácticas escritas por nuestro equipo de actuarios.</p>
+    </div>
     <div class="grid g3">
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Beneficios Laborales</span><h3>¿Quién está obligado a hacer un estudio actuarial en Ecuador?</h3><p>NIIF Plenas, NIIF para Pymes y lo que exige tu auditor externo.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>4 min</span></div></div></a>
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Seguros y Salud</span><h3>¿Qué es la reserva IBNR y por qué puede hundir tu balance?</h3><p>Siniestros ocurridos y no reportados: el riesgo invisible de las aseguradoras.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>5 min</span></div></div></a>
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Data Wave</span><h3>¿Cómo saber qué clientes están a punto de abandonarte?</h3><p>Modelos de deserción: predecir el churn antes de que pase.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>5 min</span></div></div></a>
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Riesgos y Finanzas</span><h3>¿Cuánto vale realmente tu empresa antes de una venta?</h3><p>Valoración con estándares IVS, IFRS y US GAAP — sin números de servilleta.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>6 min</span></div></div></a>
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Beneficios Laborales</span><h3>¿Qué diferencia hay entre jubilación patronal y desahucio?</h3><p>Dos provisiones distintas que suelen confundirse — y cómo se calculan.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>4 min</span></div></div></a>
-      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Seguros y Salud</span><h3>¿Qué implica IFRS 17 para una aseguradora en Ecuador?</h3><p>Los cambios de fondo en medición de contratos y qué hacer primero.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>7 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Beneficios Laborales y Actuariales</span><h3>¿Quién está obligado a hacer un estudio actuarial en Ecuador?</h3><p>NIIF Plenas, NIIF para Pymes y lo que exige tu auditor externo.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>4 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Seguros y Medicina Prepagada</span><h3>¿Qué es la reserva IBNR y por qué puede hundir tu balance?</h3><p>Siniestros ocurridos y no reportados: el riesgo invisible de las aseguradoras.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>5 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Análisis de Datos para Negocios</span><h3>¿Cómo saber qué clientes están a punto de abandonarte?</h3><p>Modelos de deserción: predecir el churn antes de que pase.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>5 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Riesgos y Finanzas Corporativas</span><h3>¿Cuánto vale realmente tu empresa antes de una venta?</h3><p>Valoración con estándares IVS, IFRS y US GAAP, sin números de servilleta.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>6 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Beneficios Laborales y Actuariales</span><h3>¿Qué diferencia hay entre jubilación patronal y desahucio?</h3><p>Dos provisiones distintas que suelen confundirse, y cómo se calculan.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>4 min</span></div></div></a>
+      <a class="a-card" href="blog-articulo.html"><div class="ph">Imagen</div><div class="a-body"><span class="chip">Seguros y Medicina Prepagada</span><h3>¿Qué implica IFRS 17 para una aseguradora en Ecuador?</h3><p>Los cambios de fondo en medición de contratos y qué hacer primero.</p><div class="meta"><span>[Autor]</span><span>[Fecha]</span><span>7 min</span></div></div></a>
     </div>
     <div class="pagination"><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">→</a></div>
     <p class="wf-note">En Webflow: colección CMS (los 266 posts ya importados) con campos: pregunta-título, respuesta directa, vertical, autor, fecha, tiempo de lectura. Evento GA4: blog_read_complete (&gt;90 s).</p>
+    <p class="wf-note">Pendiente: imágenes de portada reales, autor, fecha y tiempo de lectura por artículo (hoy son placeholders). Confirmar también el orden por defecto de la grilla (más recientes vs. destacados manuales).</p>
   </div>
 </section>
 
-<!-- BLOQUE 04 · SUSCRIPCIÓN -->
+<!-- BLOQUE 04 · CTA CONSULTIVO -->
 <div class="wrap">
-  <span class="wf-tag" style="margin-top:40px">Blog 04 · Captura de suscriptores</span>
+  <span class="wf-tag" style="margin-top:40px">Blog 04 · CTA consultivo</span>
   <div class="cta-final">
-    <h2>Una respuesta útil al mes, directo a tu correo</h2>
-    <p>Sin spam: solo lo que un gerente financiero necesita saber sobre normativa, riesgo y datos.</p>
-    <div class="form-card" style="max-width:460px">
-      <form action="#">
-        <div class="f-field"><label>Correo corporativo</label><input type="email" placeholder="nombre@empresa.com"></div>
-        <button class="btn btn-primary f-submit" type="button">Suscribirme</button>
-      </form>
-      <p class="f-micro">1 campo · puedes salir cuando quieras</p>
-    </div>
+    <h2>¿El tema te toca de cerca?</h2>
+    <p>Un especialista revisa tu caso y te explica qué implica para tu empresa, sin compromiso.</p>
+    <a class="btn btn-primary" href="contacto.html">Solicita asesoría especializada</a>
+    <small>Respuesta en menos de 24 horas hábiles</small>
   </div>
+  <p class="wf-note">El bloque de «Suscripción al blog mensual» que ocupaba este lugar se eliminó por pedido del deck; puede volver cuando se defina el envío del newsletter. En su reemplazo queda el CTA consultivo homologado («Solicita asesoría especializada»), coherente con las 4 verticales. Pendiente: confirmar si este CTA se queda o el bloque desaparece por completo.</p>
 </div>
 
 <footer>
@@ -100,20 +111,21 @@
         <div class="iso"><span>ISO 9001:2015</span><span>ISO/IEC 27001:2022</span></div>
       </div>
       <div><h4>Servicios</h4><ul>
-        <li><a href="employment-benefits.html">Beneficios Laborales</a></li>
+        <li><a href="employment-benefits.html">Beneficios Laborales y Actuariales</a></li>
         <li><a href="insurance-health.html">Seguros y Medicina Prepagada</a></li>
-        <li><a href="data-wave.html">Data Wave</a></li>
-        <li><a href="risk-finance.html">Riesgos y Finanzas</a></li></ul>
+        <li><a href="data-wave.html">Análisis de Datos para Negocios</a></li>
+        <li><a href="risk-finance.html">Riesgos y Finanzas Corporativas</a></li></ul>
       </div>
       <div><h4>Empresa</h4><ul>
-        <li><a href="#">Cómo trabajamos</a></li><li><a href="#">Casos</a></li>
-        <li><a href="blog.html">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li></ul>
+        <li><a href="employment-benefits.html#proceso">Cómo trabajamos</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li>
+        <li><a href="contacto.html">Contacto</a></li></ul>
       </div>
       <div><h4>Contacto</h4><ul>
         <li>Quito: Av. Orellana E9-195 y Av. 6 de Diciembre, Edif. Alisal de Orellana, Of. 804</li>
         <li>Guayaquil: Av. José Santiago Castillo y Av. Francisco de Orellana, Edif. Millenium, Of. 1107</li>
         <li>(+593-2) 392-3400 · info@actuaria.com</li>
-        <li>Lunes a viernes · 8h30–17h30</li></ul>
+        <li>Lunes a viernes · 8h30 a 17h30</li></ul>
       </div>
     </div>
     <div class="copy"><span>© 2026 Actuaria Consultores</span><span>Wireframe media fidelidad · Template de blog</span></div>
