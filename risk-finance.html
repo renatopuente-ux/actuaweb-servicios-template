@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riesgos y Finanzas · Template servicios Actuaria (wireframe)</title>
+<title>Riesgos y Finanzas Corporativas · Template servicios Actuaria (wireframe)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -14,177 +14,191 @@
   <div class="wrap nav">
     <a class="logo" href="index.html"><img class="logo-img" src="logo-actuaria.svg" alt="Actuaria"></a>
     <ul class="nav-links">
-      <li><a class="active" href="#">Servicios ▾</a></li>
-      <li><a href="#como">Cómo trabajamos</a></li>
-      <li><a href="#casos">Casos</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a class="active" href="index.html">Servicios ▾</a></li>
+      <li><a href="#proceso">Cómo trabajamos</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a class="nav-sec" href="#">Nosotros</a></li>
     </ul>
-    <a class="nav-cta" href="#cta">Cotizar</a>
+    <a class="nav-cta" href="#form">Cotizar</a>
   </div>
 </header>
 
 <!-- BLOQUE 01 · HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="wf-tag">Bloque 01 · Hero + propuesta</span>
+    <span class="wf-tag">Bloque 01 · Hero</span>
     <div class="hero-grid">
       <div>
-        <span class="kicker">Riesgos y Finanzas</span>
-        <h1>¿Qué tan preparado está tu negocio para el próximo escenario adverso?</h1>
-        <p class="sub">Modelado financiero y actuarial que convierte la incertidumbre en insights accionables: factibilidad, valoración de empresas, gestión de riesgos y sostenibilidad — bajo IFRS, US GAAP y la normativa vigente.</p>
+        <span class="kicker">Riesgos y Finanzas Corporativas</span>
+        <h1>Protege la rentabilidad de tu empresa ante cualquier escenario financiero</h1>
+        <p class="sub">Diseñamos modelos financieros que transforman la incertidumbre en decisiones estratégicas. Evaluamos la factibilidad, valoración y sostenibilidad de tu empresa, cumpliendo estrictamente con estándares y la normativa local.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#cta">Cotiza tu consultoría</a>
-          <a class="btn btn-ghost" href="#faq">Resolver mis dudas primero</a>
+          <a class="btn btn-primary" href="#form">Solicita asesoría especializada</a>
         </div>
         <div class="trust">
-          <div><b>+40</b> años de trayectoria</div>
-          <div><b>+11.000</b> estudios actuariales</div>
-          <div><b>+6.500</b> clientes en la región</div>
+          <div><b>+40</b> años modelando riesgos financieros</div>
+          <div><b>+11.000</b> estudios actuariales en los últimos años</div>
         </div>
       </div>
       <div>
-        <div class="form-card">
-          <span class="chip orange">Respuesta sin compromiso</span>
-          <h3>Cotiza tu consultoría en 1 minuto</h3>
-          <form action="#">
-            <div class="f-field"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
-            <div class="f-field"><label>Correo corporativo</label><input type="email" placeholder="nombre@empresa.com"></div>
-            <div class="f-field"><label>Teléfono / WhatsApp</label><input type="tel" placeholder="+593 …"></div>
-            <button class="btn btn-primary f-submit" type="button">Cotizar mi consultoría</button>
-          </form>
-          <p class="f-micro">Solo 3 campos · Tus datos protegidos — ISO/IEC 27001</p>
-        </div>
-        <p class="wf-note">Mini-formulario para tráfico de alta intención. El formulario completo va al final (bloque 09). Evento GA4: form_submit · form_origin=hero.</p>
+        <div class="ph" style="min-height:320px"></div>
+        <p class="wf-note">Imagen de la vertical. El mini-formulario del hero se eliminó: la captación ocurre en el bloque 07.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BLOQUE 02 · SOLUCIONES -->
-<section>
+<!-- BLOQUE 02 · PRODUCTOS -->
+<section id="productos">
   <div class="wrap">
-    <span class="wf-tag">Bloque 02 · Soluciones de la vertical</span>
+    <span class="wf-tag">Bloque 02 · Productos de la línea</span>
     <div class="sec-head">
-      <h2>Consultorías que generan valor a corto, mediano y largo plazo</h2>
-      <p>Cada una identifica patrones, tendencias y correlaciones que explican el rendimiento de tu negocio.</p>
+      <h2>Descubre nuestros productos de medición en Gestión de Riesgos, Seguridad Social y Finanzas</h2>
     </div>
     <div class="grid g3">
-      <div class="card"><span class="chip">Decisión informada</span><h3>Factibilidad y sostenibilidad financiera</h3><p>Revisión de información histórica y de mercado, viabilidad económica del modelo de negocio y capacidad de generar valor sostenible — bajo IFRS, US GAAP y normativa aplicable.</p></div>
-      <div class="card"><span class="chip">M&amp;A</span><h3>Valoración de empresas</h3><p>Valor de mercado con modelos financieros avanzados para compraventas, fusiones y adquisiciones, alineado a IVS, IFRS y US GAAP.</p></div>
-      <div class="card"><span class="chip">Riesgo integral</span><h3>Consultoría en gestión de riesgos</h3><p>Identificación, cuantificación y priorización de riesgos operativos, financieros y estratégicos, con planes de mitigación y contingencia personalizados.</p></div>
-      <div class="card"><span class="chip">Fondos</span><h3>Sostenibilidad de fondos y fideicomisos</h3><p>Análisis actuarial y financiero de sistemas de beneficio definido o de reparto: primas requeridas, beneficios y cumplimiento regulatorio.</p></div>
-      <div class="card"><span class="chip">Seguridad social</span><h3>Valoración actuarial de seguridad social</h3><p>Proyección de ingresos y gastos, escenarios económicos y recomendaciones estratégicas para la estabilidad del sistema.</p></div>
-      <div class="card"><span class="chip">Lealtad rentable</span><h3>Valoración de planes de fidelización</h3><p>Reservas adecuadas proyectando acumulación y redención de millas o puntos, por tipo de producto y según la normativa.</p></div>
-      <div class="card"><span class="chip">Pasivo laboral</span><h3>Optimización del pasivo laboral: DLV y PAR</h3><p>Mecanismos de negociación que generan ahorro y Planes de Ahorro y Retiro que respaldan progresivamente las obligaciones patronales, con su impacto tributario y contable evaluado.</p></div>
+
+      <div class="card is-featured">
+        <span class="chip orange">IFRS · US GAAP</span>
+        <h3>Factibilidad y sostenibilidad financiera</h3>
+        <p>Revisamos tu información histórica y la de tu mercado para evaluar la viabilidad económica del modelo de negocio y su capacidad de generar valor sostenible en el tiempo, bajo IFRS, US GAAP y la normativa aplicable.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Fusiones y adquisiciones</span>
+        <h3>Valoración de empresas</h3>
+        <p>Determinamos el valor de mercado con modelos financieros avanzados para compraventas, fusiones y adquisiciones, alineados a los estándares IVS, IFRS y US GAAP.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Riesgo integral</span>
+        <h3>Consultoría en gestión de riesgos</h3>
+        <p>Identificamos, cuantificamos y priorizamos los riesgos operativos, financieros y estratégicos de la organización, con planes de mitigación y contingencia personalizados.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Fondos</span>
+        <h3>Sostenibilidad de fondos y fideicomisos</h3>
+        <p>Análisis actuarial y financiero de sistemas de beneficio definido o de reparto: primas requeridas, suficiencia de beneficios y cumplimiento regulatorio.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Seguridad social</span>
+        <h3>Valoración actuarial de seguridad social</h3>
+        <p>Proyectamos ingresos y gastos bajo distintos escenarios económicos y entregamos recomendaciones estratégicas para asegurar la estabilidad del sistema.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Lealtad rentable</span>
+        <h3>Valoración de planes de fidelización</h3>
+        <p>Calculamos las reservas adecuadas proyectando la acumulación y redención de millas o puntos, por tipo de producto y según la normativa vigente.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
+      <div class="card">
+        <span class="chip">Pasivo laboral</span>
+        <h3>Optimización del pasivo laboral: DLV y PAR</h3>
+        <p>Mecanismos de negociación que generan ahorro en procesos planificados de salida y Planes de Ahorro y Retiro que respaldan progresivamente las obligaciones patronales, con su impacto tributario y contable evaluado.</p>
+        <a class="card-cta" href="#form">Solicitar servicio →</a>
+      </div>
+
     </div>
+    <p class="wf-note">Pendiente del deck: confirmar los nombres comerciales definitivos de los 7 productos y las etiquetas de cada tarjeta. El bloque ya no se llama «Soluciones»: son productos de la línea de servicio.</p>
   </div>
 </section>
 
-<!-- BLOQUE 03 · CÓMO LO HACEMOS -->
-<section id="como">
+<!-- BLOQUE 03 · PROCESO -->
+<section id="proceso">
   <div class="wrap">
-    <span class="wf-tag">Bloque 03 · Cómo lo hacemos</span>
+    <span class="wf-tag">Bloque 03 · Proceso</span>
     <div class="sec-head">
-      <h2>De la incertidumbre al plan de acción</h2>
-      <p>"Nuestras consultorías se adaptan a cada tipo de negocio y se enfocan en estrategias que generen valor en el corto, mediano y largo plazo."</p>
+      <h2>El paso a paso hacia decisiones financieras seguras y rentables</h2>
     </div>
-    <div class="steps">
-      <div class="step"><h3>Entendemos tu negocio</h3><p>Analizamos tu información histórica, tu mercado y el marco regulatorio que te aplica.</p></div>
-      <div class="step"><h3>Modelamos escenarios</h3><p>Cuantificamos riesgos y proyectamos desempeño con modelos actuariales y financieros avanzados.</p></div>
-      <div class="step"><h3>Entregamos insights accionables</h3><p>Resultados claros con recomendaciones priorizadas — no un informe para archivar.</p></div>
-      <div class="step"><h3>Acompañamos la estrategia</h3><p>Soporte en la implementación, el financiamiento y el seguimiento de la alternativa elegida.</p></div>
+    <div class="steps is-5">
+      <div class="step"><h3>Diagnóstico financiero</h3><p>Analizamos tus necesidades, la información histórica, el comportamiento de tu mercado y el marco regulatorio aplicable para entender el contexto real de tu negocio.</p></div>
+      <div class="step"><h3>Estructuración de datos financieros</h3><p>Analizamos tus niveles de liquidez, rentabilidad y exposición al riesgo frente a las condiciones actuales del mercado.</p></div>
+      <div class="step"><h3>Modelamiento financiero y actuarial</h3><p>Cuantificamos los riesgos y proyectamos el desempeño de tu empresa utilizando modelos matemáticos avanzados y escenarios a futuro.</p></div>
+      <div class="step"><h3>Resultados y plan de acción</h3><p>Traducimos los modelos complejos en directrices claras y priorizadas. Te entregamos una ruta técnica y estratégica para tomar decisiones con total precisión.</p></div>
+      <div class="step"><h3>Respaldo en la implementación</h3><p>Brindamos soporte técnico continuo durante la ejecución de la estrategia, el financiamiento y el seguimiento de la alternativa elegida para asegurar el éxito.</p></div>
     </div>
+    <div class="cta-row" style="justify-content:center;margin-top:34px">
+      <a class="btn btn-primary" href="#form">Solicita asesoría especializada</a>
+    </div>
+    <p class="wf-note">Esta vertical tiene 5 pasos, no 4. La grilla los acomoda en dos filas hasta que se defina el tratamiento visual final.</p>
   </div>
 </section>
 
-<!-- BLOQUE 04 · TESTIMONIOS -->
+<!-- BLOQUE 04 · EQUIPO (oculto por ahora) -->
 <section>
   <div class="wrap">
-    <span class="wf-tag">Bloque 04 · Testimonios de la vertical</span>
-    <div class="sec-head"><h2>Decisiones difíciles, tomadas con respaldo</h2></div>
+    <span class="wf-tag">Bloque 04 · Equipo (oculto)</span>
+    <p class="wf-note">Bloque desactivado por decisión del deck: la vertical de Riesgos y Finanzas Corporativas no muestra equipo por ahora, igual que Seguros y Medicina Prepagada. La estructura queda en el HTML con <code>style="display:none"</code> para reactivarla cuando se aprueben fotos, nombres y cargos.</p>
+    <div style="display:none">
+      <div class="sec-head">
+        <h2>Los especialistas detrás de tu modelo financiero</h2>
+        <p>Actuarios y analistas financieros asignados a la vertical, disponibles durante todo el proceso.</p>
+      </div>
+      <div class="team">
+        <div class="member"><div class="avatar">•</div><b>[Nombre]</b><span>[Cargo]</span><a href="#">Ver LinkedIn →</a></div>
+        <div class="member"><div class="avatar">•</div><b>[Nombre]</b><span>[Cargo]</span><a href="#">Ver LinkedIn →</a></div>
+        <div class="member"><div class="avatar">•</div><b>[Nombre]</b><span>[Cargo]</span><a href="#">Ver LinkedIn →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 05 · TESTIMONIOS -->
+<section>
+  <div class="wrap">
+    <span class="wf-tag">Bloque 05 · Testimonios</span>
+    <div class="sec-head"><h2>Instituciones que deciden con respaldo técnico</h2></div>
     <div class="grid g2">
       <div class="t-card">
         <div class="stars">★★★★★</div>
-        <p class="t-quote">"[Testimonio de la vertical — pendiente de recopilar: idealmente un CFO o Gerente de Riesgos que haya usado factibilidad, valoración o DLV/PAR]"</p>
-        <span class="chip orange t-result">[Resultado medible]</span>
-        <div class="t-author"><div class="avatar">•</div><div><b>[Nombre real]</b><span>[Cargo] · [Empresa reconocida]</span></div></div>
+        <p class="t-quote">"Durante el 2024, desarrollamos junto al equipo de Risk and Finance de ACTUARIA un estudio de sostenibilidad financiera y actuarial. Este trabajo se convirtió en un insumo fundamental para el análisis estratégico y financiero de nuestra institución."</p>
+        <div class="t-author"><div class="avatar">•</div><div><b>Institución del sector salud</b><span>Directivo · testimonio anónimo</span></div></div>
       </div>
       <div class="t-card">
         <div class="stars">★★★★★</div>
-        <p class="t-quote">"[Segundo testimonio — un fondo previsional o fideicomiso daría cobertura al segmento institucional]"</p>
-        <span class="chip orange t-result">[Resultado medible]</span>
-        <div class="t-author"><div class="avatar">•</div><div><b>[Nombre real]</b><span>[Cargo] · [Empresa reconocida]</span></div></div>
+        <p class="t-quote">"El equipo de ACTUARIA ejecutó la valuación actuarial de nuestros seguros administrados y el trabajo fue entregado a entera satisfacción. Destacamos su estricto cumplimiento técnico y su eficiencia para ejecutar un proyecto de alta complejidad dentro de los plazos establecidos."</p>
+        <div class="t-author"><div class="avatar">•</div><div><b>Entidad de Seguridad Social</b><span>Director · testimonio anónimo</span></div></div>
       </div>
     </div>
-    <p class="wf-note">Wireframe: la guía exige nombre real, cargo y empresa reconocida por vertical — no prueba social genérica.</p>
+    <p class="wf-note">Los dos testimonios son reales y llegaron con el deck. Criterio aplicado: anónimos, identificados solo por cargo y tipo de industria, sin nombre de persona ni de empresa.</p>
   </div>
 </section>
 
-<!-- BLOQUE 05 · CASOS Y CIFRAS -->
-<section id="casos">
+<!-- BLOQUE 06 · CREDENCIALES -->
+<section id="credenciales">
   <div class="wrap">
-    <span class="wf-tag">Bloque 05 · Casos y cifras</span>
-    <div class="sec-head"><h2>Rigor que se nota en los números</h2></div>
-    <div class="stats">
-      <div class="stat"><b>7</b><span>Líneas de consultoría especializada</span></div>
-      <div class="stat"><b>IFRS</b><span>+ US GAAP e IVS como estándar de trabajo</span></div>
-      <div class="stat"><b>+40</b><span>Años modelando riesgos financieros</span></div>
-      <div class="stat"><b>[Cifra]</b><span>[Caso de la vertical — pendiente de documentar]</span></div>
+    <span class="wf-tag">Bloque 06 · Credenciales</span>
+    <div class="sec-head"><h2>Respaldados por certificaciones nacionales e internacionales</h2></div>
+
+    <p class="logos-label">Clientes que confían en nosotros</p>
+    <div class="logos">
+      <div class="logo-slot ph"></div><div class="logo-slot ph"></div><div class="logo-slot ph"></div>
+      <div class="logo-slot ph"></div><div class="logo-slot ph"></div><div class="logo-slot ph"></div>
     </div>
+
+    <p class="logos-label" style="margin-top:30px">Certificaciones y membresías</p>
+    <div class="logos">
+      <div class="logo-slot ph"></div><div class="logo-slot ph"></div><div class="logo-slot ph"></div>
+      <div class="logo-slot ph"></div><div class="logo-slot ph"></div><div class="logo-slot ph"></div>
+    </div>
+    <p class="wf-note">Las cifras de este bloque se reemplazaron por logos, según el deck. Pendiente: archivos de logos de clientes y certificaciones, y confirmar cuáles clientes autorizan aparecer.</p>
   </div>
 </section>
 
-<!-- BLOQUE 06 · EQUIPO -->
-<section>
-  <div class="wrap">
-    <span class="wf-tag">Bloque 06 · Equipo / autoridad técnica</span>
-    <div class="sec-head">
-      <h2>Especialistas en riesgo y finanzas corporativas</h2>
-      <p>La autoridad técnica al nivel de la decisión que estás tomando.</p>
-    </div>
-    <div class="team">
-      <div class="member"><div class="avatar">•</div><b>[Vocero técnico 1]</b><span>[Cargo · credencial]</span><a href="#">Ver LinkedIn →</a></div>
-      <div class="member"><div class="avatar">•</div><b>[Vocero técnico 2]</b><span>[Cargo · credencial]</span><a href="#">Ver LinkedIn →</a></div>
-      <div class="member"><div class="avatar">•</div><b>[Vocero técnico 3]</b><span>[Cargo · credencial]</span><a href="#">Ver LinkedIn →</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- BLOQUE 07 · PUENTE -->
-<section>
-  <div class="wrap">
-    <span class="wf-tag">Bloque 07 · Puente a otras verticales</span>
-    <div class="sec-head"><h2>Esto también podría interesarte</h2></div>
-    <div class="bridge">
-      <a href="employment-benefits.html"><h3>Beneficios Laborales</h3><p>La optimización DLV/PAR empieza con un estudio actuarial de tu pasivo laboral bajo NIC 19.</p><span class="arrow">Calcular mi pasivo laboral →</span></a>
-      <a href="insurance-health.html"><h3>Seguros y Medicina Prepagada</h3><p>¿Aseguradora? Solvencia II, IFRS 17, reservas técnicas y tarificación con el mismo rigor.</p><span class="arrow">Ver soluciones para seguros →</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- BLOQUE 08 · FAQ -->
-<section id="faq">
-  <div class="wrap">
-    <span class="wf-tag">Bloque 08 · FAQ (schema FAQPage)</span>
-    <div class="sec-head"><h2>Preguntas frecuentes</h2><p>Lo que un CFO, Gerente de Riesgo o Tesorero pregunta antes de contratar.</p></div>
-    <div class="faq">
-      <details open><summary>¿Qué modelos de riesgo financiero implementan?</summary><p>Modelos de riesgo operativo, financiero y estratégico: cuantificamos y priorizamos cada riesgo con herramientas avanzadas, y desarrollamos planes de mitigación y contingencia a la medida de la organización, con evaluación continua del perfil de riesgo.</p></details>
-      <details><summary>¿Trabajan con riesgo de capital y solvencia?</summary><p>Sí. Determinamos el capital adecuado de la organización y desarrollamos modelos de solvencia — incluyendo marcos como Solvencia II para aseguradoras — adaptados a cada tipo de riesgo y a la normativa que te aplica.</p></details>
-      <details><summary>¿Pueden hacer stress testing de portafolios?</summary><p>Sí. Simulamos escenarios adversos sobre tu portafolio o modelo de negocio usando información histórica y de mercado, para medir el impacto en resultados y capital antes de que ocurra — y definir con anticipación las acciones de respuesta.</p></details>
-      <details><summary>¿Qué normativa aplica para gestión de riesgos en Ecuador?</summary><p>Depende de tu industria: trabajamos con la normativa financiera vigente y aplicable en el país y con estándares internacionales como IFRS, US GAAP e IVS. Parte de la consultoría es precisamente mapear el marco regulatorio que te corresponde y asegurar su cumplimiento.</p></details>
-      <details><summary>¿Cómo valoran una empresa?</summary><p>Analizamos estados financieros y datos relevantes, aplicamos modelos financieros avanzados y consideramos factores económicos, sectoriales y específicos del negocio. La valoración cumple estándares internacionales y sirve para compraventas, fusiones, adquisiciones y decisiones estratégicas.</p></details>
-      <details><summary>¿Qué es la optimización del pasivo laboral (DLV y PAR)?</summary><p>Son estrategias para administrar las obligaciones patronales: mecanismos de negociación que generan ahorro en procesos planificados de salida (DLV) y Planes de Ahorro y Retiro que constituyen fondos progresivos (PAR) — siempre con su impacto tributario y contable evaluado.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- BLOQUE 09 · CTA -->
-<div class="wrap" id="cta">
-  <span class="wf-tag" style="margin-top:40px">Bloque 09 · CTA específico</span>
+<!-- BLOQUE 07 · FORMULARIO -->
+<div class="wrap" id="form">
+  <span class="wf-tag" style="margin-top:40px">Bloque 07 · Formulario</span>
   <div class="cta-final">
-    <h2>Cotiza tu consultoría de riesgos y finanzas</h2>
-    <p>Cuéntanos la decisión que tienes por delante — factibilidad, valoración, riesgos o pasivo laboral — y te proponemos el estudio exacto.</p>
+    <h2>Respalda tus decisiones financieras con precisión matemática</h2>
+    <p>Analizamos la factibilidad, valoración de empresas o gestión de riesgos, cuéntanos tu desafío y un experto estructurará la solución técnica adecuada.</p>
     <div class="form-card">
       <form action="#">
         <div class="f-grid2">
@@ -196,15 +210,44 @@
           <div class="f-field"><label>*Apellido</label><input type="text"></div>
         </div>
         <div class="f-field"><label>*Correo corporativo</label><input type="email" placeholder="nombre@empresa.com"></div>
-        <div class="f-field"><label>Servicio</label><select><option>Estudio Actuarial — Beneficios Laborales</option><option>Seguros y Medicina Prepagada</option><option>Data Wave</option><option selected>Riesgos y Finanzas</option></select></div>
-        <div class="f-field"><label>Tu mensaje (opcional)</label><textarea rows="3" placeholder="Cuéntanos la decisión que tienes por delante"></textarea></div>
+        <div class="f-field"><label>Servicio</label><select><option>Beneficios Laborales y Actuariales</option><option>Seguros y Medicina Prepagada</option><option>Análisis de Datos para Negocios</option><option selected>Riesgos y Finanzas Corporativas</option></select></div>
+        <div class="f-field"><label>Tu mensaje (opcional)</label><textarea rows="3" placeholder="Cuéntanos tu desafío financiero"></textarea></div>
         <label class="consent"><input type="checkbox"> Declaro haber leído y entendido la Política de Protección de Datos Personales de Actuaria Consultores S.A. y autorizo el tratamiento de mis datos.</label>
-        <button class="btn btn-primary f-submit" type="button">Cotizar mi consultoría ahora</button>
+        <button class="btn btn-primary f-submit" type="button">Solicitar asesoría especializada</button>
       </form>
       <p class="f-micro">Servicio preseleccionado según la vertical · Evento GA4: form_submit · form_origin=final</p>
     </div>
   </div>
 </div>
+
+<!-- BLOQUE 08 · PREGUNTAS FRECUENTES -->
+<section id="faq">
+  <div class="wrap">
+    <span class="wf-tag">Bloque 08 · Preguntas frecuentes (schema FAQPage)</span>
+    <div class="sec-head">
+      <h2>¿Tienes dudas?</h2>
+      <p>Resolvemos tus preguntas sobre nuestras soluciones.</p>
+    </div>
+    <div class="faq">
+      <details open><summary>¿Qué modelos de riesgo financiero implementan?</summary><p>Modelos de riesgo operativo, financiero y estratégico: cuantificamos y priorizamos cada riesgo con herramientas avanzadas, y desarrollamos planes de mitigación y contingencia a la medida de la organización, con evaluación continua del perfil de riesgo.</p></details>
+      <details><summary>¿Cómo valoran una empresa?</summary><p>Analizamos estados financieros y datos relevantes, aplicamos modelos financieros avanzados y consideramos factores económicos, sectoriales y específicos del negocio. La valoración cumple estándares internacionales y sirve para compraventas, fusiones, adquisiciones y decisiones estratégicas.</p></details>
+      <details><summary>¿Trabajan con riesgo de capital y solvencia?</summary><p>Sí. Determinamos el capital adecuado de la organización y desarrollamos modelos de solvencia, incluyendo marcos como Solvencia II para aseguradoras, adaptados a cada tipo de riesgo y a la normativa que te aplica.</p></details>
+    </div>
+    <p class="wf-note">Solo 3 preguntas por página, según el deck. Las preguntas restantes del banco (stress testing, normativa de riesgos en Ecuador, DLV y PAR) quedan como referencia para blog y buscador.</p>
+  </div>
+</section>
+
+<!-- BLOQUE 09 · SERVICIOS RELACIONADOS -->
+<section>
+  <div class="wrap">
+    <span class="wf-tag">Bloque 09 · Servicios relacionados</span>
+    <div class="sec-head"><h2>Conoce otras soluciones empresariales que podrían interesarte</h2></div>
+    <div class="bridge">
+      <a href="employment-benefits.html"><h3>Beneficios Laborales y Actuariales</h3><p>Transformamos tu pasivo laboral de jubilación patronal en información clara, auditable y lista para decidir.</p><span class="arrow">Ver soluciones de pasivo laboral →</span></a>
+      <a href="insurance-health.html"><h3>Seguros y Medicina Prepagada</h3><p>Calculamos y validamos reservas, tarifas y solvencia para aseguradoras y empresas de medicina prepagada con la normativa vigente del país y estándares IFRS 17 y Solvencia II.</p><span class="arrow">Ver soluciones para seguros →</span></a>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
@@ -215,20 +258,21 @@
         <div class="iso"><span>ISO 9001:2015</span><span>ISO/IEC 27001:2022</span></div>
       </div>
       <div><h4>Servicios</h4><ul>
-        <li><a href="employment-benefits.html">Beneficios Laborales</a></li>
+        <li><a href="employment-benefits.html">Beneficios Laborales y Actuariales</a></li>
         <li><a href="insurance-health.html">Seguros y Medicina Prepagada</a></li>
-        <li><a href="data-wave.html">Data Wave</a></li>
-        <li><a href="risk-finance.html">Riesgos y Finanzas</a></li></ul>
+        <li><a href="data-wave.html">Análisis de Datos para Negocios</a></li>
+        <li><a href="risk-finance.html">Riesgos y Finanzas Corporativas</a></li></ul>
       </div>
       <div><h4>Empresa</h4><ul>
-        <li><a href="#">Cómo trabajamos</a></li><li><a href="#">Casos</a></li>
-        <li><a href="#">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li></ul>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="#">Nosotros</a></li><li><a href="#">Actuaria Plus ↗</a></li>
+        <li><a href="contacto.html">Contacto</a></li></ul>
       </div>
       <div><h4>Contacto</h4><ul>
         <li>Quito: Av. Orellana E9-195 y Av. 6 de Diciembre, Edif. Alisal de Orellana, Of. 804</li>
         <li>Guayaquil: Av. José Santiago Castillo y Av. Francisco de Orellana, Edif. Millenium, Of. 1107</li>
         <li>(+593-2) 392-3400 · info@actuaria.com</li>
-        <li>Lunes a viernes · 8h30–17h30</li></ul>
+        <li>Lunes a viernes · 8h30 a 17h30</li></ul>
       </div>
     </div>
     <div class="copy"><span>© 2026 Actuaria Consultores</span><span>Wireframe media fidelidad · Template integral de servicios</span></div>
