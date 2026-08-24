@@ -44,19 +44,19 @@
 <section>
   <div class="wrap">
     <div class="sec-head"><h2>La anatomía del template</h2>
-    <p>9 bloques en orden fijo. Los 8 de la guía PMV + un bloque de Soluciones (02) que agregamos porque el catálogo de servicios de cada vertical es contenido esencial que la anatomía original no contempla.</p></div>
+    <p>9 bloques en orden fijo. Versión v4, con el orden y los criterios definidos en el deck "Borrador Web" (agosto 2026): el bloque 02 pasa a llamarse Productos, el formulario sube antes de las FAQ, y las cifras del bloque de credenciales se reemplazan por logos.</p></div>
     <div class="anatomy">
-      <div class="a-block"><b><span class="a-num">01</span>Hero + propuesta</b><span>Pregunta detonante + promesa + mini-formulario de 3 campos (alta intención) + cifras de confianza</span></div>
-      <div class="a-block"><b><span class="a-num">02</span>Soluciones de la vertical</b><span>El catálogo real de servicios, en cards uniformes con chips</span></div>
-      <div class="a-block"><b><span class="a-num">03</span>Cómo lo hacemos</b><span>Proceso en 4 pasos — reduce la incertidumbre del comprador B2B</span></div>
-      <div class="a-block"><b><span class="a-num">04</span>Testimonios por vertical</b><span>Prueba social específica: nombre real, cargo, empresa, resultado</span></div>
-      <div class="a-block"><b><span class="a-num">05</span>Casos y cifras</b><span>Números puntuales, no "líderes en…"</span></div>
-      <div class="a-block"><b><span class="a-num">06</span>Equipo / autoridad técnica</b><span>Voceros de la vertical con LinkedIn</span></div>
-      <div class="a-block"><b><span class="a-num">07</span>Puente a otra vertical</b><span>Cross-sell orgánico, 2 puentes por página</span></div>
-      <div class="a-block"><b><span class="a-num">08</span>FAQ</b><span>6 preguntas con respuestas de 50-80 palabras — schema FAQPage, la capa clave de AEO</span></div>
-      <div class="a-block"><b><span class="a-num">09</span>CTA + formulario completo</b><span>"Cotiza tu…" con formulario completo y servicio preseleccionado por vertical — ambos formularios disparan form_submit (GA4) con form_origin distinto</span></div>
+      <div class="a-block"><b><span class="a-num">01</span>Hero</b><span>Titular de la vertical + promesa + un solo CTA consultivo + cifras de confianza. Sin formulario: la captación ocurre en el bloque 07</span></div>
+      <div class="a-block"><b><span class="a-num">02</span>Productos de la línea</b><span>El catálogo real, en cards con CTA propio. No son "soluciones": son los productos de la línea de servicio</span></div>
+      <div class="a-block"><b><span class="a-num">03</span>Proceso</b><span>El flujo técnico paso a paso, con el CTA al formulario al cierre</span></div>
+      <div class="a-block"><b><span class="a-num">04</span>Equipo</b><span>Voceros de la vertical. En Seguros y Riesgos está oculto por ahora</span></div>
+      <div class="a-block"><b><span class="a-num">05</span>Testimonios</b><span>Anónimos, identificados por tipo de industria en lugar de nombre y empresa</span></div>
+      <div class="a-block"><b><span class="a-num">06</span>Credenciales</b><span>Logos de clientes y de certificaciones nacionales e internacionales</span></div>
+      <div class="a-block"><b><span class="a-num">07</span>Formulario</b><span>Punto único de captación, con el servicio preseleccionado por vertical. Evento GA4 form_submit</span></div>
+      <div class="a-block"><b><span class="a-num">08</span>Preguntas frecuentes</b><span>Solo 3 preguntas por página, con schema FAQPage: la capa clave de AEO</span></div>
+      <div class="a-block"><b><span class="a-num">09</span>Servicios relacionados</b><span>Cross-sell orgánico hacia otras dos verticales</span></div>
     </div>
-    <p class="wf-note">Transversales en todas las páginas: WhatsApp flotante · header limpio con "Nosotros" secundario · footer con certificaciones ISO. Las etiquetas punteadas <span class="wf-tag" style="margin:0">Bloque XX</span> son anotaciones del wireframe — no van en producción.</p>
+    <p class="wf-note">Transversales en todas las páginas: WhatsApp flotante · el mismo menú del home en las 4 verticales · "Cotizar" únicamente como botón del header, todos los CTA del contenido son consultivos · footer con certificaciones ISO. Las etiquetas punteadas <span class="wf-tag" style="margin:0">Bloque XX</span> son anotaciones del wireframe — no van en producción.</p>
   </div>
 </section>
 
@@ -65,10 +65,10 @@
     <div class="sec-head"><h2>Las 4 líneas de negocio con el template aplicado</h2>
     <p>El contenido proviene de las páginas actuales de actuaria.com, reescrito con UX writing (pregunta detonante, beneficio antes que característica, verbos de acción) y storytelling B2B.</p></div>
     <div class="pages">
-      <a class="page-card" href="employment-benefits.html"><span class="chip">Vertical ancla</span><h3>Beneficios Laborales</h3><p>Jubilación patronal y desahucio · NIC 19 · 6 soluciones incl. Navia (IA actuarial)</p><span class="arrow">Ver página →</span></a>
-      <a class="page-card" href="insurance-health.html"><span class="chip">Sector asegurador</span><h3>Seguros y Medicina Prepagada</h3><p>Reservas técnicas · Tarificación · IFRS 17 y Solvencia II · 7 soluciones · testimonio real BMI</p><span class="arrow">Ver página →</span></a>
-      <a class="page-card" href="data-wave.html"><span class="chip">Vertical de futuro</span><h3>Data Wave</h3><p>Automatización · BI · Machine Learning · 3 testimonios reales (GPF 98%, IMFRISA, Seguros del Pichincha)</p><span class="arrow">Ver página →</span></a>
-      <a class="page-card" href="risk-finance.html"><span class="chip">Autoridad técnica</span><h3>Riesgos y Finanzas</h3><p>Factibilidad · Valoración de empresas · Gestión de riesgos · DLV y PAR · 7 consultorías</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="employment-benefits.html"><span class="chip">Vertical ancla</span><h3>Beneficios Laborales y Actuariales</h3><p>Jubilación patronal y desahucio · NIC 19 y NIIF PYMES s.28 · 5 productos + Actuaria+</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="insurance-health.html"><span class="chip">Sector asegurador</span><h3>Seguros y Medicina Prepagada</h3><p>Reservas técnicas (IBNR, RRC, SPA) · Solvencia y capital adecuado · IFRS 17 y Solvencia II · proceso de 5 pasos</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="data-wave.html"><span class="chip">Vertical de futuro</span><h3>Análisis de Datos para Negocios</h3><p>Automatización de procesos · Inteligencia de Negocios · Aprendizaje Automatizado</p><span class="arrow">Ver página →</span></a>
+      <a class="page-card" href="risk-finance.html"><span class="chip">Autoridad técnica</span><h3>Riesgos y Finanzas Corporativas</h3><p>Factibilidad · Valoración de empresas · Gestión de riesgos · 2 testimonios reales anónimos</p><span class="arrow">Ver página →</span></a>
     </div>
   </div>
 </section>
@@ -78,8 +78,8 @@
     <div class="sec-head"><h2>Templates independientes</h2>
     <p>Además del template de servicios, el sistema incluye tres plantillas de soporte al funnel.</p></div>
     <div class="pages" style="grid-template-columns:repeat(3,1fr)">
-      <a class="page-card" href="blog.html"><span class="chip">Contenido / AEO</span><h3>Blog — hub</h3><p>Filtros por vertical, destacado, cards con título-pregunta y captura de suscriptores. Base: CMS con los 266 posts importados.</p><span class="arrow">Ver template →</span></a>
-      <a class="page-card" href="blog-articulo.html"><span class="chip">Contenido / AEO</span><h3>Blog — artículo</h3><p>Formato Q&amp;A de la guía: pregunta como H1, respuesta directa 50-80 palabras, desarrollo en H2, FAQ final y CTA contextual a la vertical.</p><span class="arrow">Ver template →</span></a>
+      <a class="page-card" href="blog.html"><span class="chip">Contenido / AEO</span><h3>Radar Actuarial (hub)</h3><p>Filtros por vertical, buscador por palabra clave y cards uniformes. Base: CMS con los 266 posts importados. El destacado y la suscripción se eliminaron por pedido del deck.</p><span class="arrow">Ver template →</span></a>
+      <a class="page-card" href="blog-articulo.html"><span class="chip">Contenido / AEO</span><h3>Blog, artículo</h3><p>H1 libre (ya no obligado a ser pregunta), resumen con keywords para SEO, desarrollo en H2, bio del autor y después el CTA contextual a la vertical.</p><span class="arrow">Ver template →</span></a>
       <a class="page-card" href="contacto.html"><span class="chip">Conversión</span><h3>Contacto</h3><p>WhatsApp primero, formulario completo, "qué pasa después", oficinas con Google Maps y consistencia de entidad para AEO.</p><span class="arrow">Ver template →</span></a>
     </div>
   </div>
